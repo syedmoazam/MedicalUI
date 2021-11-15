@@ -33,7 +33,7 @@ function AppDrawer() {
     return (
         <>
             <StatusBar barStyle={'dark-content'} translucent backgroundColor={'transparent'} />
-            <Drawer.Navigator initialRouteName="Verification" screenOptions={{
+            <Drawer.Navigator initialRouteName="Intro" screenOptions={{
                 headerShown: false,
                 drawerLabelStyle: { color: '#767676', position: 'relative', right: 24 },
             }}
@@ -47,6 +47,14 @@ function AppDrawer() {
                     ),
                 }}
                 />
+                <Drawer.Screen name="Dashboard" component={Dashboard} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Dashboard',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer1} />
+                    ),
+                }}
+                />
                 <Drawer.Screen name="BookAppointment" component={BookAppointment} options={{
                     drawerActiveBackgroundColor: '#FFFFFF',
                     drawerLabel: 'Book an Appointment',
@@ -55,7 +63,48 @@ function AppDrawer() {
                     ),
                 }}
                 />
-
+                <Drawer.Screen name="Intro" component={Intro} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Intro Slider',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
+                <Drawer.Screen name="Home" component={Home} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Home',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
+                <Drawer.Screen name="MobileSignIn" component={MobileSignIn} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'SignIn',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
+                <Drawer.Screen name="Verification" component={Verification} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Verification',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
+                <Drawer.Screen name="Location" component={Location} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Location',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
+                {/* <Drawer.Screen name="Map" component={Map} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Book an Appointment',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} /> */}
             </Drawer.Navigator>
         </>
     )
