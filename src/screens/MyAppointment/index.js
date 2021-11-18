@@ -110,7 +110,8 @@ const styles = StyleSheet.create({
         fontFamily: 'LatoBold',
         color: '#2A2AC0',
         borderBottomColor: '#2A2AC0',
-        borderBottomWidth: 1
+        borderBottomWidth: 1,
+        paddingBottom: 20
     },
     textRegular: {
         fontSize: 16,

@@ -10,7 +10,15 @@ import {
     Map,
     Dashboard,
     MAppointment,
-    BookAppointment
+    BookAppointment,
+    Doctor,
+    Confirmation,
+    Payment,
+    MedicalRecords,
+    Feedback,
+    Heartbeat,
+    Heartrate,
+    Forums
 } from '../screens';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { StatusBar } from 'react-native';
@@ -98,13 +106,69 @@ function AppDrawer() {
                         <Img image={drawer2} />
                     ),
                 }} />
-                {/* <Drawer.Screen name="Map" component={Map} options={{ headerShown: false }} options={{
+                <Drawer.Screen name="Doctor" component={Doctor} options={{ headerShown: false }} options={{
                     drawerActiveBackgroundColor: '#FFFFFF',
-                    drawerLabel: 'Book an Appointment',
+                    drawerLabel: 'Doctor',
                     drawerIcon: ({ color }) => (
                         <Img image={drawer2} />
                     ),
-                }} /> */}
+                }} />
+                <Drawer.Screen name="Confirmation" component={Confirmation} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Confirmation',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
+                <Drawer.Screen name="Payment" component={Payment} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Payment',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
+                <Drawer.Screen name="MedicalRecords" component={MedicalRecords} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Medical Records',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
+                <Drawer.Screen name="Feedback" component={Feedback} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Feedback',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
+                <Drawer.Screen name="Heartbeat" component={Heartbeat} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Heartbeat',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
+                <Drawer.Screen name="Heartrate" component={Heartrate} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Heartbeat',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
+                <Drawer.Screen name="Forums" component={Forums} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Forums',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
+                <Drawer.Screen name="Map" component={Map} options={{ headerShown: false }} options={{
+                    drawerActiveBackgroundColor: '#FFFFFF',
+                    drawerLabel: 'Map',
+                    drawerIcon: ({ color }) => (
+                        <Img image={drawer2} />
+                    ),
+                }} />
             </Drawer.Navigator>
         </>
     )

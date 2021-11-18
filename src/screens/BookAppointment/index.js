@@ -55,10 +55,10 @@ export default function BookAppointment({ navigation }) {
                                 <Image style={styles.drPic} source={require('../../assets/images/dr1.jpg')}/>
                             </View>
                             <View style={styles.info}>
-                                <Text style={styles.name}>Dr. Martin Pilier</Text>
-                                <Text style={styles.otherInfo}>Cardiologist</Text>
-                                <Text style={styles.otherInfo}>Luxembourg Ville - 2 km</Text>
-                                <Text style={styles.otherInfo}>
+                                <Text onPress={()=>navigation.navigate("Confirmation")} style={styles.name}>Dr. Martin Pilier</Text>
+                                <Text onPress={()=>navigation.navigate("Confirmation")} style={styles.otherInfo}>Cardiologist</Text>
+                                <Text onPress={()=>navigation.navigate("Confirmation")} style={styles.otherInfo}>Luxembourg Ville - 2 km</Text>
+                                <Text onPress={()=>navigation.navigate("Confirmation")} style={styles.otherInfo}>
                                     <Img image={rating}/>(213)
                                 </Text>
                             </View>
